@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poor+Story&family=Poppins&display=swap');
+
+:root {
+    --primary-color: rgb(30 35 38);
+    --secondary-color: #3c3c5d;
+    --primary-text-color: rgb(255, 255, 255);
+    --secondary-text-color: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--secondary-color);
+
+}
+
+header {
+    width: 80vw;
+    background-color: var(--primary-color);
+    margin: auto;
+    margin-top: 12px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    align-items: center;
+    margin: auto;
+    padding: 12px;
+    color: var(--primary-text-color);
+
+}
+
+.nav-icons ul {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-icons ul li a {
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.nav-icons ul li {
+    list-style: none;
+}
+
+.logo img {
+    height: 50px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-1 {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.left-1 .watermark img {
+    height: 340px;
+    filter: opacity(20%);
+}
+
+.left-1 .text-1 {
+    position: absolute;
+    color: var(--primary-text-color);
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.left-2 {
+    background-color: #5a419a;
+    border-radius: 12px;
+    height: 120px;
+    width: 100%;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: var(--primary-text-color);
+    font-family: poppins;
+}
+
+.left-boxes {
+    padding: 5px;
+    background-color: var(--primary-color);
+    padding: 5px 15%;
+    border-radius: 7px;
+}
+
+.left-2 .left-box-text-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-2 .left-box-text-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.right {
+    width: 50%;
+    height: auto;
+}
+
+.minion-1 img {
+    position: fixed;
+    left: 62vw;
+    top: 25%;
+    height: 45vh;
+    z-index: 10;
+}
+
+.minion-semicircle img {
+    position: fixed;
+    height: 100vh;
+    left: 84vw;
+
+}
