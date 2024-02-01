@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poor+Story&family=Poppins&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/*font-family: 'Quicksand', sans-serif;*/
+
 :root {
     --primary-color: rgb(30 35 38);
     --secondary-color: #3c3c5d;
@@ -12,12 +15,29 @@
     padding: 0;
 }
 
+/* Change the width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+/* Change the color and rounded corners of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    height: 10px;
+}
+
+
+
+
 body {
     background-color: var(--secondary-color);
 
 }
 
 header {
+    
     width: 80vw;
     background-color: var(--primary-color);
     margin: auto;
@@ -28,6 +48,8 @@ header {
 }
 
 header nav {
+    position: absolute;
+    top: 2%;
     display: flex;
     justify-content: space-between;
     width: 70vw;
@@ -40,7 +62,7 @@ header nav {
 
 .nav-icons ul {
     display: flex;
-    gap: 16px;
+    gap: 20px;
 }
 
 .nav-icons ul li a {
@@ -54,9 +76,18 @@ header nav {
     list-style: none;
 }
 
+.nav-icons ul li a:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
 .logo img {
     height: 50px;
-
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .logo {
@@ -64,6 +95,11 @@ header nav {
     align-items: center;
     gap: 16px;
     font-family: 'Poppins', sans-serif;
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .section-1 {
@@ -92,6 +128,11 @@ header nav {
 .left-1 .watermark img {
     height: 340px;
     filter: opacity(20%);
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .left-1 .text-1 {
@@ -142,17 +183,52 @@ header nav {
     height: auto;
 }
 
-.minion-1 img {
-    position: fixed;
-    left: 62vw;
-    top: 25%;
-    height: 45vh;
-    z-index: 10;
+
+.minion-semicircle {
+    margin-left: 41%;
+    width: 450px;
+    height: 450px;
+    background-color: #FFD803;
+    border-radius: 50% 0 0% 50%;
+
 }
 
-.minion-semicircle img {
-    position: fixed;
-    height: 100vh;
-    left: 84vw;
 
+.image-fade {
+    position: absolute;
+    top: 150px;
+    right: 1%;
+    width: 700px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.image-fade.active {
+    opacity: 1;
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.logo_description{
+    margin-top: 20px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer{
+    margin-top: 10px;
+    height: 200px;
+    width: 100%;
+    background-color: black;
 }
