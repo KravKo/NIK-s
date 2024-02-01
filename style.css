@@ -36,26 +36,16 @@ body {
 
 }
 
-header {
-    
-    width: 80vw;
-    background-color: var(--primary-color);
+nav {
     margin: auto;
     margin-top: 12px;
+    width: 80vw;
+    padding: 10px 40px;
     border-radius: 20px;
-    position: relative;
-    z-index: 10;
-}
-
-header nav {
-    position: absolute;
-    top: 2%;
     display: flex;
-    justify-content: space-between;
-    width: 70vw;
     align-items: center;
-    margin: auto;
-    padding: 12px;
+    justify-content: space-between;
+    background-color: var(--primary-color);
     color: var(--primary-text-color);
 
 }
@@ -76,7 +66,7 @@ header nav {
     list-style: none;
 }
 
-.nav-icons ul li a:hover{
+.nav-icons ul li a:hover {
     color: yellow;
     cursor: pointer;
 }
@@ -102,11 +92,15 @@ header nav {
     -ms-user-select: none;
 }
 
+.mobile_icons_responsive {
+    display: none;
+}
+
 .section-1 {
     width: 80vw;
     height: auto;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 2px;
     display: flex;
 }
 
@@ -146,9 +140,9 @@ header nav {
 .left-2 {
     background-color: #5a419a;
     border-radius: 12px;
-    height: 120px;
+    height: auto;
     width: 100%;
-    padding: 4px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -160,15 +154,15 @@ header nav {
 }
 
 .left-boxes {
-    padding: 5px;
     background-color: var(--primary-color);
-    padding: 5px 15%;
-    border-radius: 7px;
+    padding: 25px 70px;
+    border-radius: 18px;
 }
 
 .left-2 .left-box-text-1 {
     display: flex;
     flex-direction: column;
+    font-size: 28px;
 }
 
 .left-2 .left-box-text-2 {
@@ -217,8 +211,9 @@ header nav {
     -ms-user-select: none;
 }
 
-.logo_description{
-    margin-top: 20px;
+.logo_description {
+    margin-top: 5px;
+    margin-bottom: 6px;
     color: white;
     font-family: 'Quicksand', sans-serif;
     font-size: 10px;
@@ -226,9 +221,155 @@ header nav {
     text-align: center;
 }
 
-.footer{
+.footer {
     margin-top: 10px;
     height: 200px;
     width: 100%;
     background-color: black;
+    color: var(--primary-text-color);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: poppins;
+    font-size: 12px;
+}
+
+.portion-1,
+.portion-2,
+.portion-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    color: var(--primary-text-color);
+}
+
+
+@media screen and (max-width: 952px) {
+
+    nav {
+        height: 50px;
+        position: fixed;
+        top: 90%;
+        left: 2%;
+        width: 75vw;
+
+    }
+
+
+    .nav-icons {
+        display: none;
+    }
+
+    .nav-icons ul {
+        display: none;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mobile_icons_responsive {
+        display: block;
+    }
+
+
+    .mobile_icons_responsive ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    .mobile_icons_responsive ul li a {
+        list-style: none;
+        font-family: 'Nunito', sans-serif;
+        text-decoration: none;
+        color: var(--primary-text-color);
+    }
+
+    .mobile_icons_responsive ul li {
+        list-style: none;
+    }
+
+    .mobile_icons_responsive ul li a:hover {
+        color: yellow;
+        cursor: pointer;
+    }
+
+
+
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .left-1 .watermark img {
+        height: 250px;
+    }
+
+    .left-1 .text-1 {
+        font-size: 20px;
+    }
+
+    .left-2 {
+        width: 80%;
+        font-size: 20px;
+    }
+
+
+
+    .left-2 .left-box-text-1 {
+        font-size: 20px;
+    }
+
+
+    .left-boxes {
+        padding: 15px 30px;
+    }
+
+    .left-box-text-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+
+    .minion-semicircle {
+        margin-left: 15%;
+        width: 300px;
+        height: 300px;
+    }
+
+    .image-fade {
+        top: 5%;
+        width: 400px;
+        right: 7%;
+    }
+
+    .portion-1,
+    .portion-2,
+    .portion-3 {
+        justify-content: start;
+    }
+
+    .footer {
+        padding-top: 20px;
+        height: 150px;
+        font-size: 7px;
+    }
 }
