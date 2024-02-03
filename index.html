@@ -21,35 +21,78 @@
         </div>
         <div class="nav-icons">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a id="home" href="#">Home</a></li>
+                <li><a id="team" href="#">Team</a></li>
+                <li><a id="projects" href="#">Projects</li>
+                <li><a id="fqa" href="#">FAQ</a></li>
             </ul>
         </div>
-        <div class="mobile_icons_responsive"> 
+
+        <div class="mobile_icons_responsive">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li id="home_mbl" onclick="showContent(1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none">
+                        <path d="M12 17H12.009" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M20 8.5V13.5C20 17.2712 20 19.1569 18.8284 20.3284C17.6569 21.5 15.7712 21.5 12 21.5C8.22876 21.5 6.34315 21.5 5.17157 20.3284C4 19.1569 4 17.2712 4 13.5V8.5"
+                            stroke="#ffffff" stroke-width="1.5" />
+                        <path
+                            d="M22 10.5L17.6569 6.33548C14.9902 3.77849 13.6569 2.5 12 2.5C10.3431 2.5 9.00981 3.77849 6.34315 6.33548L2 10.5"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                    <p id="content1" class="content active">Home</p>
+                </li>
+                <li id="team_mbl" onclick="showContent(2)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M20.774 18C21.5233 18 22.1193 17.5285 22.6545 16.8691C23.7499 15.5194 21.9513 14.4408 21.2654 13.9126C20.568 13.3756 19.7894 13.0714 19 13M18 11C19.3807 11 20.5 9.88071 20.5 8.5C20.5 7.11929 19.3807 6 18 6"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                            d="M3.22596 18C2.47666 18 1.88067 17.5285 1.34555 16.8691C0.250089 15.5194 2.04867 14.4408 2.73465 13.9126C3.43197 13.3756 4.21058 13.0714 5 13M5.5 11C4.11929 11 3 9.88071 3 8.5C3 7.11929 4.11929 6 5.5 6"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+                        <path
+                            d="M8.0838 15.1112C7.06203 15.743 4.38299 17.0331 6.0147 18.6474C6.81178 19.436 7.69952 20 8.81563 20H15.1844C16.3005 20 17.1882 19.436 17.9853 18.6474C19.617 17.0331 16.938 15.743 15.9162 15.1112C13.5201 13.6296 10.4799 13.6296 8.0838 15.1112Z"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M15.5 7.5C15.5 9.433 13.933 11 12 11C10.067 11 8.5 9.433 8.5 7.5C8.5 5.567 10.067 4 12 4C13.933 4 15.5 5.567 15.5 7.5Z"
+                            stroke="#ffffff" stroke-width="1.5" />
+                    </svg>
+                    <p id="content2" class="content">Team</p>
+                </li>
+                <li id="projects_mbl" onclick="showContent(3)"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M10 12.3333C10 12.0233 10 11.8683 10.0341 11.7412C10.1265 11.3961 10.3961 11.1265 10.7412 11.0341C10.8683 11 11.0233 11 11.3333 11H12.6667C12.9767 11 13.1317 11 13.2588 11.0341C13.6039 11.1265 13.8735 11.3961 13.9659 11.7412C14 11.8683 14 12.0233 14 12.3333V13C14 14.1046 13.1046 15 12 15C10.8954 15 10 14.1046 10 13V12.3333Z"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M13.8016 13C14.1132 12.9095 14.4666 12.8005 14.88 12.673L19.0512 11.3866C20.5358 10.9288 21.2624 10.131 21.4204 8.74977C21.4911 8.13198 21.5265 7.82308 21.4768 7.57022C21.3349 6.84864 20.7289 6.26354 19.9213 6.06839C19.6383 6 19.283 6 18.5724 6H5.42757C4.717 6 4.36172 6 4.07871 6.06839C3.27111 6.26354 2.6651 6.84864 2.52323 7.57022C2.47351 7.82308 2.50886 8.13198 2.57956 8.74977C2.73764 10.131 3.46424 10.9288 4.94882 11.3866L9.11996 12.673C9.53336 12.8005 9.88684 12.9095 10.1984 13"
+                            stroke="#ffffff" stroke-width="1.5" />
+                        <path
+                            d="M3.46283 11L3.26658 13.1723C2.91481 17.0662 2.73892 19.0131 3.86734 20.2566C4.99576 21.5 6.93851 21.5 10.824 21.5H13.176C17.0615 21.5 19.0042 21.5 20.1327 20.2566C21.2611 19.0131 21.0852 17.0662 20.7334 13.1723L20.5372 11"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M15.5 5.5L15.4227 5.23509C15.0377 3.91505 14.8452 3.25503 14.3869 2.87752C13.9286 2.5 13.3199 2.5 12.1023 2.5H11.8977C10.6801 2.5 10.0714 2.5 9.61309 2.87752C9.15478 3.25503 8.96228 3.91505 8.57727 5.23509L8.5 5.5"
+                            stroke="#ffffff" stroke-width="1.5" />
+                    </svg>
+                    <p id="content3" class="content">Projects</p>
+                </li>
+                <li id="fqa_mbl" onclick="showContent(4)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="#ffffff" stroke-width="1.5" />
+                        <path
+                            d="M10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 9.39815 13.8837 9.76913 13.6831 10.0808C13.0854 11.0097 12 11.8954 12 13V13.5"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M11.992 17H12.001" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <p id="content4" class="content">FAQ</p>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <div class="section-1">
-        <div class="right">
-            <div class="minion-semicircle">
-                <img class="image-fade active" src="Images/minions/question.png" alt="Image 1">
-                <img class="image-fade" src="Images/minions/answer.png" alt="Image 2">
-                <img class="image-fade" src="Images/minions/known.png" alt="Image 3">
-                <img class="image-fade" src="Images/minions/hiii.png" alt="Image 4">
-            </div>
-
-        </div>
-    </div>
+    <div id="section1" class="section-1">
         <div class="left">
             <div class="left-1">
                 <div class="watermark">
@@ -60,42 +103,379 @@
                 </div>
             </div>
             <div class="left-2">
-                <div class="left-box-text-1">
-                    What do you want us to make?
-                </div>
-                <div class="left-box-text-2">
-                    <div class=" left-boxes left-2-box-1">
-                        Website
-                    </div>
-                    <div class="left-boxes left-2-box-2">
-                        App
+                <div class="client_count">
+                    <h1>We Have Made</h1>
+                    <div class="client_countdown">
+                        <div class="Countdown">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M20 10.128C20 6.29644 20 4.38064 18.8284 3.19032C17.6569 2 15.7712 2 12 2H10C6.22876 2 4.34315 2 3.17157 3.19032C2 4.38064 2 6.29644 2 10.128C2 13.9596 2 15.8754 3.17157 17.0657C3.64118 17.5428 4.2255 17.8287 5 18"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+                                <path
+                                    d="M22 17.5C22 15.6251 22 14.6877 21.5225 14.0305C21.3683 13.8183 21.1817 13.6317 20.9695 13.4775C20.3123 13 19.3749 13 17.5 13H12.5C10.6251 13 9.6877 13 9.03054 13.4775C8.8183 13.6317 8.63166 13.8183 8.47746 14.0305C8 14.6877 8 15.6251 8 17.5C8 19.3749 8 20.3123 8.47746 20.9695C8.63166 21.1817 8.8183 21.3683 9.03054 21.5225C9.6877 22 10.6251 22 12.5 22H17.5C19.3749 22 20.3123 22 20.9695 21.5225C21.1817 21.3683 21.3683 21.1817 21.5225 20.9695C22 20.3123 22 19.3749 22 17.5Z"
+                                    stroke="#ffffff" stroke-width="2" />
+                                <path
+                                    d="M16.5 16L17.4199 16.7929C17.8066 17.1262 18 17.2929 18 17.5C18 17.7071 17.8066 17.8738 17.4199 18.2071L16.5 19"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M13.5 16L12.5801 16.7929C12.1934 17.1262 12 17.2929 12 17.5C12 17.7071 12.1934 17.8738 12.5801 18.2071L13.5 19"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2.5 6H19.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <h3 id="counter">00</h3>
+                            <h2>Websites</h2>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-    <div class="logo_description">
+        <div class="right">
+            <div class="minion-semicircle">
+                <img class="image-fade active" src="Images/minions/question.png" alt="Image 1">
+                <img class="image-fade" src="Images/minions/answer.png" alt="Image 2">
+                <img class="image-fade" src="Images/minions/known.png" alt="Image 3">
+                <img class="image-fade" src="Images/minions/hiii.png" alt="Image 4">
+            </div>
+
+        </div>
+    </div>
+    <div id="logo_description" class="logo_description">
         <h3>We're a creative Web Design & Development Company in Kathmandu, Nepal. We build amazing websites and robust
             software applications.</h3>
     </div>
+
+    <div id="section2" class="section-2">
+        <div class="section-2-portion-1">
+            <div class="section-2-left">
+                <div class="bg-behind-teams">
+                    <div class="bg-top">
+                    </div>
+                    <div class="bg-bottom">
+                    </div>
+                </div>
+                <div class="alignment-factor">
+                    <div class="team-images">
+                        <img class="n1" src="Images/team/team.png" alt="Nishanta">
+                    </div>
+                </div>
+            </div>
+            <div class="section-2-right">
+                <div class="how-we-started">
+                    <div class="how-we-started-head right-head">
+                        - HOW WE STARTED -
+                    </div>
+                    <div class="how-we-started-description right-description">
+                        We, the founders, used to be colleuges studying in same batch. We too, at the same time, were
+                        very good friends. As we got to know each other more, we found that we had a lot of things in
+                        common. By common, we mean the same enthuaistic spirit for coding and web development. So, we
+                        decided to collaborate and stand up as a company.
+                    </div>
+                </div>
+                <div class="our-vision">
+                    <div class="our-vision-head right-head">
+                        - OUR VISION -
+                    </div>
+                    <div class="our-vision-description right-description">
+                        We believe people should be able to stand up their business on the internet. This helps
+                        businesses grow in an international level. Still, not many people know about it. Our core vision
+                        is to help people make their own website and rise up within the pace of growing digitilization
+                        at the most affordable cost.
+                    </div>
+                </div>
+                <div class="our-goals">
+                    <div class="our-goals-head right-head">
+                        - OUR GOALS -
+                    </div>
+                    <div class="our-goals-description right-description ">
+                        We help people and businesses to make their websites. We prioritize small-scale business and
+                        give them our best in the most satisfactory cost. We want to spread a wave of awareness and help
+                        such people make their own identity for standing up and competing in the international market.
+                        Best within the budget is our topmost priority.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-2-portion-2">
+            <div class="team-title">
+                <h2>TEAM</h2>
+            </div>
+            <div class="members">
+                <div class="member1">
+                    <div class="member-1part-1 member">
+                        <div class="member-image">
+                            <img src="Images/team/nishanta.jpg" alt="Nishanta">
+                        </div>
+                        <div class="member-info">
+                            <div>NAME: NISHANTA POUDEL</div>
+                            <div>CONTACT: +977 9863499888</div>
+                            <div>MAIL: nishantapoudel.niks@gmail.com</div>
+                            <div>ROLE: CO-FOUNDER / CEO</div>
+                            <div>SKILLS: HTML | CSS | JS </div>
+                            <div>EXPERTISE: FRONT END WEB DEVELOPMENT</div>
+                        </div>
+                    </div>
+                    <div class="member-1-part-2 member-description">
+                        I am Nishanta Poudel. I am a senior web developer at NIK's. I handle all the basic framewok
+                        designs and do
+                        majority of the front end codes. I am responsible for majority of HTML-CSS and some JavaScript.
+                        I am also a
+                        senior designer. I create logos and graphical layouts of web pages.
+                    </div>
+                </div>
+                <div class="member2">
+                    <div class="member-2part-1 member">
+                        <div class="member-image">
+                            <img src="Images/team/krishav.jpg" alt="Nishanta">
+                        </div>
+                        <div class="member-info">
+                            <div>NAME: KRISHAV KOIRALA</div>
+                            <div>CONTACT: +977 9815930022</div>
+                            <div>MAIL: krishavkoirala.niks@gmail.com</div>
+                            <div>ROLE: CO-FOUNDER / CEO</div>
+                            <div>SKILLS: HTML | CSS | JS </div>
+                            <div>EXPERTISE: BACK END WEB DEVELOPMENT</div>
+                        </div>
+                    </div>
+                    <div class="member-2-part-2 member-description">
+                        Hi, I'm Krishav Koirala, a self-made programmer and proud founder of NIK's, a website building
+                        company. Proficient in HTML, CSS, C#, C, and JavaScript, I manage the design, scripting, and
+                        accounting aspects of our projects. As the creative force, I craft graphics and logos, and
+                        personally engage with clients to ensure successful communication and project delivery. Your
+                        digital vision is my passion and expertise.
+                    </div>
+                </div>
+                <div class="member3">
+                    <div class="member-3part-1 member">
+                        <div class="member-image">
+                            <img src="Images/team/ishwor.jpg" alt="Nishanta">
+                        </div>
+                        <div class="member-info">
+                            <div>NAME: ISHWOR SUBEDI</div>
+                            <div>CONTACT: +977 9766847972</div>
+                            <div>MAIL: ishworsubedi.niks@gmail.com</div>
+                            <div>ROLE: CO-FOUNDER / CEO</div>
+                            <div>SKILLS: NODE-JS | MONGO-DB</div>
+                            <div>EXPERTISE: DATABASE MANAGEMENT</div>
+                        </div>
+                    </div>
+                    <div class="member-3-part-2 member-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptate quam molestiae
+                        temporibus est vel consequatur iusto nostrum nihil beatae! Mollitia minima provident nostrum
+                        consectetur, quod perspiciatis quos sint corrupti dolor cum eaque quasi voluptates nihil,
+                        commodi, perferendis ex quam.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section3" class="section-3">
+        <div class="clients_section">
+            <h1>Our Clients</h1>
+            <div class="clients_images">
+                <img src="Images/logos/B-01-02.jpg" alt="">
+                <img src="Images/logos/Backstage-1.png" alt="">
+                <img src="Images/logos/Bullet.png" alt="">
+                <img src="Images/logos/KRAVKO-1.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="our_projects">
+            <h1>Our Projects</h1>
+            <section class="project_container">
+                <div class="image-container">
+                    <img src="Images/logos/B-01-02.jpg" alt="Image" class="clear-image">
+                    <div class="overlay">
+                        <p class="text">Kravko</p>
+                        <a href="https://example.com" target="_blank" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="Images/logos/Backstage-1.png" alt="Image" class="clear-image">
+                    <div class="overlay">
+                        <p class="text">Kravko</p>
+                        <a href="https://example.com" target="_blank" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="Images/logos/Bullet.png" alt="Image" class="clear-image">
+                    <div class="overlay">
+                        <p class="text">Kravko</p>
+                        <a href="https://example.com" target="_blank" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="Images/logos/KRAVKO-1.png" alt="Image" class="clear-image">
+                    <div class="overlay">
+                        <p class="text">Kravko</p>
+                        <a href="https://example.com" target="_blank" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="Images/logos/B-01-02.jpg" alt="Image" class="clear-image">
+                    <div class="overlay">
+                        <p class="text">Kravko</p>
+                        <a href="https://example.com" target="_blank" class="view-button">View</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="clients_review">
+            <h1>Clients Reviews</h1>
+            <div class="clients_rating">
+                <div class="stars">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><img src="https://cdn.hugeicons.com/icons/star-stroke-rounded.svg" alt="star" width="24"
+                        height="24" />
+                    <h3>Satisfaction</h3>
+                </div>
+                <div class="stars">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><img src="https://cdn.hugeicons.com/icons/star-stroke-rounded.svg" alt="star" width="24"
+                        height="24" />
+                    <h3>Credibility</h3>
+                </div>
+                <div class="stars">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><img src="https://cdn.hugeicons.com/icons/star-stroke-rounded.svg" alt="star" width="24"
+                        height="24" />
+                    <h3>Support</h3>
+                </div>
+                <div class="stars">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><img src="https://cdn.hugeicons.com/icons/star-stroke-rounded.svg" alt="star" width="24"
+                        height="24" />
+                    <h3>Quality</h3>
+                </div>
+                <div class="stars">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                            stroke="#f8e71c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><img src="https://cdn.hugeicons.com/icons/star-stroke-rounded.svg" alt="star" width="24"
+                        height="24" />
+                    <h3>Value for Money</h3>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
     <div class="footer">
         <div class="portion-1">
-            <div class="portion-1-element-1">
+            <div class="portion-1-element-1 glow">
                 Contact us
             </div>
-            <div class="portion-1-element-2">
+            <div class="portion-1-element-2 glow">
                 | Email: |
             </div>
-            <div class="portion-1-element-3">
+            <div class="portion-1-element-3 glow">
                 niks.contact.gmail.com
             </div>
-            <div class="portion-1-element-4">
+            <div class="portion-1-element-4 glow">
                 | Mobile: |
             </div>
-            <div class="portion-1-element-5">
+            <div class="portion-1-element-5 glow">
                 +977 9812987337
             </div>
-            <div class="portion-1-element-6">
+            <div class="portion-1-element-6 glow">
                 +977 9817097938
             </div>
         </div>
@@ -139,34 +519,35 @@
                             stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" />
                     </svg></a>
             </div>
-            <div class="portion-2-element-1">
+            <div class="portion-2-element-1 glow">
                 XYZ Plaza, 6th & 7th floor
             </div>
-            <div class="portion-2-element-2">
+            <div class="portion-2-element-2 glow">
                 Kathmandu-Mall Kathmandu
             </div>
-            <div class="portion-2-element-3">
+            <div class="portion-2-element-3 glow">
                 Nepal, Asia
             </div>
         </div>
         <div class="portion-3">
-            <div class="portion-3-element-1">
+            <div class="portion-3-element-1 glow">
                 <a href="#">Terms & Conditions</a>
             </div>
-            <div class="portion-3-element-2">
+            <div class="portion-3-element-2 glow">
                 <a href="#">Privacy Policy</a>
             </div>
-            <div class="portion-3-element-3">
+            <div class="portion-3-element-3 glow">
                 <a href="#">Docs</a>
             </div>
-            <div class="portion-3-element-4">
+            <div class="portion-3-element-4 glow">
                 <a href="#">Contact</a>
             </div>
-            <div class="portion-3-element-5">
+            <div class="portion-3-element-5 glow">
                 <a href="#">Manage Cookies</a>
             </div>
         </div>
     </div>
+
 </body>
 
 <script src="script.js"></script>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>NIK's-Teams</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <div>
+        <img src="Images/logo.png" alt="NIK's">
+      </div>
+      <div>
+        You imagine we create.
+      </div>
+    </div>
+    <div class="nav-icons">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile_icons_responsive">
+      <ul>
+        <li onclick="showContent(1)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none">
+              <path d="M12 17H12.009" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M20 8.5V13.5C20 17.2712 20 19.1569 18.8284 20.3284C17.6569 21.5 15.7712 21.5 12 21.5C8.22876 21.5 6.34315 21.5 5.17157 20.3284C4 19.1569 4 17.2712 4 13.5V8.5"
+                stroke="#ffffff" stroke-width="1.5" />
+              <path
+                d="M22 10.5L17.6569 6.33548C14.9902 3.77849 13.6569 2.5 12 2.5C10.3431 2.5 9.00981 3.77849 6.34315 6.33548L2 10.5"
+                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+            </svg></a>
+          <p id="content1" class="content active">Home</p>
+        </li>
+        <li onclick="showContent(2)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none">
+              <path
+                d="M20.774 18C21.5233 18 22.1193 17.5285 22.6545 16.8691C23.7499 15.5194 21.9513 14.4408 21.2654 13.9126C20.568 13.3756 19.7894 13.0714 19 13M18 11C19.3807 11 20.5 9.88071 20.5 8.5C20.5 7.11929 19.3807 6 18 6"
+                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+              <path
+                d="M3.22596 18C2.47666 18 1.88067 17.5285 1.34555 16.8691C0.250089 15.5194 2.04867 14.4408 2.73465 13.9126C3.43197 13.3756 4.21058 13.0714 5 13M5.5 11C4.11929 11 3 9.88071 3 8.5C3 7.11929 4.11929 6 5.5 6"
+                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+              <path
+                d="M8.0838 15.1112C7.06203 15.743 4.38299 17.0331 6.0147 18.6474C6.81178 19.436 7.69952 20 8.81563 20H15.1844C16.3005 20 17.1882 19.436 17.9853 18.6474C19.617 17.0331 16.938 15.743 15.9162 15.1112C13.5201 13.6296 10.4799 13.6296 8.0838 15.1112Z"
+                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M15.5 7.5C15.5 9.433 13.933 11 12 11C10.067 11 8.5 9.433 8.5 7.5C8.5 5.567 10.067 4 12 4C13.933 4 15.5 5.567 15.5 7.5Z"
+                stroke="#ffffff" stroke-width="1.5" />
+            </svg></a>
+          <p id="content2" class="content">Team</p>
+        </li>
+        <li onclick="showContent(3)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none">
+              <path
+                d="M10 12.3333C10 12.0233 10 11.8683 10.0341 11.7412C10.1265 11.3961 10.3961 11.1265 10.7412 11.0341C10.8683 11 11.0233 11 11.3333 11H12.6667C12.9767 11 13.1317 11 13.2588 11.0341C13.6039 11.1265 13.8735 11.3961 13.9659 11.7412C14 11.8683 14 12.0233 14 12.3333V13C14 14.1046 13.1046 15 12 15C10.8954 15 10 14.1046 10 13V12.3333Z"
+                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M13.8016 13C14.1132 12.9095 14.4666 12.8005 14.88 12.673L19.0512 11.3866C20.5358 10.9288 21.2624 10.131 21.4204 8.74977C21.4911 8.13198 21.5265 7.82308 21.4768 7.57022C21.3349 6.84864 20.7289 6.26354 19.9213 6.06839C19.6383 6 19.283 6 18.5724 6H5.42757C4.717 6 4.36172 6 4.07871 6.06839C3.27111 6.26354 2.6651 6.84864 2.52323 7.57022C2.47351 7.82308 2.50886 8.13198 2.57956 8.74977C2.73764 10.131 3.46424 10.9288 4.94882 11.3866L9.11996 12.673C9.53336 12.8005 9.88684 12.9095 10.1984 13"
+                stroke="#ffffff" stroke-width="1.5" />
+              <path
+                d="M3.46283 11L3.26658 13.1723C2.91481 17.0662 2.73892 19.0131 3.86734 20.2566C4.99576 21.5 6.93851 21.5 10.824 21.5H13.176C17.0615 21.5 19.0042 21.5 20.1327 20.2566C21.2611 19.0131 21.0852 17.0662 20.7334 13.1723L20.5372 11"
+                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M15.5 5.5L15.4227 5.23509C15.0377 3.91505 14.8452 3.25503 14.3869 2.87752C13.9286 2.5 13.3199 2.5 12.1023 2.5H11.8977C10.6801 2.5 10.0714 2.5 9.61309 2.87752C9.15478 3.25503 8.96228 3.91505 8.57727 5.23509L8.5 5.5"
+                stroke="#ffffff" stroke-width="1.5" />
+            </svg></a>
+          <p id="content3" class="content">Projects</p>
+        </li>
+        <li onclick="showContent(4)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="#ffffff" stroke-width="1.5" />
+              <path
+                d="M10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9C14 9.39815 13.8837 9.76913 13.6831 10.0808C13.0854 11.0097 12 11.8954 12 13V13.5"
+                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M11.992 17H12.001" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></a>
+          <p id="content4" class="content">FAQ</p>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="section-2">
+    <div class="section-2-portion-1">
+      <div class="section-2-left">
+        <div class="bg-behind-teams">
+          <div class="bg-top">
+          </div>
+          <div class="bg-bottom">
+          </div>
+        </div>
+        <div class="alignment-factor">
+          <div class="team-images">
+            <img class="n1" src="Images/team/team.png" alt="Nishanta">
+          </div>
+        </div>
+      </div>
+      <div class="section-2-right">
+        <div class="how-we-started">
+          <div class="how-we-started-head right-head">
+            - HOW WE STARTED -
+          </div>
+          <div class="how-we-started-description right-description">
+            We, the founders, used to be colleuges studying in same batch. We too, at the same time, were
+            very good friends. As we got to know each other more, we found that we had a lot of things in
+            common. By common, we mean the same enthuaistic spirit for coding and web development. So, we
+            decided to collaborate and stand up as a company.
+          </div>
+        </div>
+        <div class="our-vision">
+          <div class="our-vision-head right-head">
+            - OUR VISION -
+          </div>
+          <div class="our-vision-description right-description">
+            We believe people should be able to stand up their business on the internet. This helps
+            businesses grow in an international level. Still, not many people know about it. Our core vision
+            is to help people make their own website and rise up within the pace of growing digitilization
+            at the most affordable cost.
+          </div>
+        </div>
+        <div class="our-goals">
+          <div class="our-goals-head right-head">
+            - OUR GOALS -
+          </div>
+          <div class="our-goals-description right-description ">
+            We help people and businesses to make their websites. We prioritize small-scale business and
+            give them our best in the most satisfactory cost. We want to spread a wave of awareness and help
+            such people make their own identity for standing up and competing in the international market.
+            Best within the budget is our topmost priority.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-2-portion-2">
+      <div class="team-title">
+        <h2>TEAM</h2>
+      </div>
+      <div class="members">
+        <div class="member1">
+          <div class="member-1part-1 member">
+            <div class="member-image">
+              <img src="Images/team/nishanta.jpg" alt="Nishanta">
+            </div>
+            <div class="member-info">
+              <div>NAME: NISHANTA POUDEL</div>
+              <div>CONTACT: +977 9863499888</div>
+              <div>MAIL: nishantapoudel.niks@gmail.com</div>
+              <div>ROLE: CO-FOUNDER / CEO</div>
+              <div>SKILLS: HTML | CSS | JS </div>
+              <div>EXPERTISE: FRONT END WEB DEVELOPMENT</div>
+            </div>
+          </div>
+          <div class="member-1-part-2 member-description">
+            I am Nishanta Poudel. I am a senior web developer at NIK's. I handle all the basic framewok designs and do
+            majority of the front end codes. I am responsible for majority of HTML-CSS and some JavaScript. I am also a
+            senior designer. I create logos and graphical layouts of web pages.
+          </div>
+        </div>
+        <div class="member2">
+          <div class="member-2part-1 member">
+            <div class="member-image">
+              <img src="Images/team/krishav.jpg" alt="Nishanta">
+            </div>
+            <div class="member-info">
+              <div>NAME: KRISHAV KOIRALA</div>
+              <div>CONTACT: +977 9815930022</div>
+              <div>MAIL: krishavkoirala.niks@gmail.com</div>
+              <div>ROLE: CO-FOUNDER / CEO</div>
+              <div>SKILLS: HTML | CSS | JS </div>
+              <div>EXPERTISE: BACK END WEB DEVELOPMENT</div>
+            </div>
+          </div>
+          <div class="member-2-part-2 member-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptate quam molestiae
+            temporibus est vel consequatur iusto nostrum nihil beatae! Mollitia minima provident nostrum
+            consectetur, quod perspiciatis quos sint corrupti dolor cum eaque quasi voluptates nihil,
+            commodi, perferendis ex quam.
+          </div>
+        </div>
+        <div class="member3">
+          <div class="member-3part-1 member">
+            <div class="member-image">
+              <img src="Images/team/ishwor.jpg" alt="Nishanta">
+            </div>
+            <div class="member-info">
+              <div>NAME: ISHWOR SUBEDI</div>
+              <div>CONTACT: +977 9766847972</div>
+              <div>MAIL: ishworsubedi.niks@gmail.com</div>
+              <div>ROLE: CO-FOUNDER / CEO</div>
+              <div>SKILLS: NODE-JS | MONGO-DB</div>
+              <div>EXPERTISE: DATABASE MANAGEMENT</div>
+            </div>
+          </div>
+          <div class="member-3-part-2 member-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptate quam molestiae
+            temporibus est vel consequatur iusto nostrum nihil beatae! Mollitia minima provident nostrum
+            consectetur, quod perspiciatis quos sint corrupti dolor cum eaque quasi voluptates nihil,
+            commodi, perferendis ex quam.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="footer">
+    <div class="portion-1">
+      <div class="portion-1-element-1 glow">
+        Contact us
+      </div>
+      <div class="portion-1-element-2 glow">
+        | Email: |
+      </div>
+      <div class="portion-1-element-3 glow">
+        niks.contact.gmail.com
+      </div>
+      <div class="portion-1-element-4 glow">
+        | Mobile: |
+      </div>
+      <div class="portion-1-element-5 glow">
+        +977 9812987337
+      </div>
+      <div class="portion-1-element-6 glow">
+        +977 9817097938
+      </div>
+    </div>
+    <div class="portion-2">
+      <div class="portion-2-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z"
+            stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+            stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" />
+          <path
+            d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
+            stroke="#ffffff" stroke-width="1.5" />
+          <path d="M17.5078 6.5L17.4988 6.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M3 21L10.5484 13.4516M21 3L13.4516 10.5484M13.4516 10.5484L8 3H3L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516"
+            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M6.51734 17.1132C6.91177 17.6905 8.10883 18.9228 9.74168 19.2333M9.86428 22C8.83582 21.8306 2 19.6057 2 12.0926C2 5.06329 8.0019 2 12.0008 2C15.9996 2 22 5.06329 22 12.0926C22 19.6057 15.1642 21.8306 14.1357 22C14.1357 22 13.9267 18.5826 14.0487 17.9969C14.1706 17.4113 13.7552 16.4688 13.7552 16.4688C14.7262 16.1055 16.2043 15.5847 16.7001 14.1874C17.0848 13.1032 17.3268 11.5288 16.2508 10.0489C16.2508 10.0489 16.5318 7.65809 15.9996 7.56548C15.4675 7.47287 13.8998 8.51192 13.8998 8.51192C13.4432 8.38248 12.4243 8.13476 12.0018 8.17939C11.5792 8.13476 10.5568 8.38248 10.1002 8.51192C10.1002 8.51192 8.53249 7.47287 8.00036 7.56548C7.46823 7.65809 7.74917 10.0489 7.74917 10.0489C6.67316 11.5288 6.91516 13.1032 7.2999 14.1874C7.79575 15.5847 9.27384 16.1055 10.2448 16.4688C10.2448 16.4688 9.82944 17.4113 9.95135 17.9969C10.0733 18.5826 9.86428 22 9.86428 22Z"
+            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M2 6L8.91302 9.91697C11.4616 11.361 12.5384 11.361 15.087 9.91697L22 6" stroke="#ffffff"
+            stroke-width="1.5" stroke-linejoin="round" />
+          <path
+            d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"
+            stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="portion-2-element-1 glow">
+        &#169 Copyright The NIK's Foundation
+      </div>
+      <div class="portion-2-element-2 glow">
+        | 2024 |
+      </div>
+      <div class="portion-2-element-3 glow">
+        All Rights Reserved.
+      </div>
+    </div>
+    <div class="portion-3">
+      <div class="portion-3-element-1 glow">
+        <a href="#">Terms & Conditions</a>
+      </div>
+      <div class="portion-3-element-2 glow">
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="portion-3-element-3 glow">
+        <a href="#">Docs</a>
+      </div>
+      <div class="portion-3-element-4 glow">
+        <a href="#">Contact</a>
+      </div>
+      <div class="portion-3-element-5 glow">
+        <a href="#">Manage Cookies</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
+</body>
+
+</html>
